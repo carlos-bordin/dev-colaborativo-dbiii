@@ -22,9 +22,9 @@ form_adicionar_tarefa.addEventListener("submit", (event) => {
 
     let nova_tarefa = template_tarefa.content.cloneNode(true).querySelector(".tarefa"); // clona o template HTML e elementos filhos
     nova_tarefa.id = ("tarefa-" + task_counter)
-    nova_tarefa.querySelector("p").textContent = formData.get('nome-tarefa')
+    nova_tarefa.querySelector("p").textContent = task_counter + ". " + formData.get('nome-tarefa')
 
-    nova_tarefa.querySelector("p").addEventListener('click', function (event) {
+    nova_tarefa.addEventListener('click', function (event) {
         const child = event.target.closest('.tarefa');
         if (!child) return;
         nova_tarefa.classList.toggle("concluida")
