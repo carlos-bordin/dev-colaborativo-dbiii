@@ -1,0 +1,87 @@
+:root{
+    --cor-primaria: rgb(87, 218, 142);
+    --cor-primaria-escura: rgb(42, 145, 56) ;
+    --cor-fundo: #235;
+    --cor-card: rgb(47, 71, 117);
+    --cor-texto: #eeeeee;
+    --cor-texto-secundario: rgba(10, 10, 10, 0.867);
+    
+}
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 20px;
+    text-align: left;
+}
+
+.logo{
+font-weight: lighter;
+font-style: oblique;
+}
+
+main{
+  width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+
+}
+
+h1, h2{
+text-align: center;
+}
+
+hr{
+width: 100%;
+}
+
+.box{
+display:flexbox;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+border: 1px solid;
+border-radius: 10px;
+padding: 20px;
+max-width: fit-content;
+text-align: center;
+background-color: var(--cor-card);
+}
+
+.box.lista{
+border: 0px;
+background-color: var(--cor-fundo);
+}
+
+.tarefa{
+margin-left: auto;
+margin-right: auto;
+border: 1px solid;
+padding: 5px;
+min-width: 500px;
+max-width: fit-content;
+text-align: justify;
+background-color: var(--cor-card);
+}
+button{
+background-color: var(--cor-primaria);
+color: var(--cor-texto);
+
+cursor: pointer;
+}
+
+button:hover{
+background-color: var(--cor-primaria-escura);
+}
+
