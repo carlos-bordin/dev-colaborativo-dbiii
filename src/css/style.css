@@ -13,10 +13,14 @@ box-sizing: border-box;
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     font-family: Calibri,'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+    
 }
 
 header{
@@ -27,14 +31,23 @@ header{
 }
 
 .logo{
+font-size: 50px;
 font-weight: lighter;
 font-style: oblique;
+justify-self: center;
 }
+
+
+.logo img{
+    height: 50px;
+    justify-self: center;
+}
+
 
 main{
     width: 90%;
     margin: 30px auto;
-
+    flex: 1;
 }
 
 h1, h2{
@@ -49,6 +62,7 @@ width: 100%;
 display:flexbox;
 margin-left: auto;
 margin-right: auto;
+margin-top: 50px;
 margin-bottom: 50px;
 border: 1px solid;
 border-radius: 10px;
@@ -85,6 +99,8 @@ background-color: var(--cor-primaria-escura);
 }
 
 footer{
+padding: 1rem;
 font-style: italic;
 font-weight: lighter;
+text-align: center;
 }
