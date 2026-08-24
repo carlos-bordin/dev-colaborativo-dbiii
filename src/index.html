@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Lista de Tarefas</title>
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="https://icons.getbootstrap.com/assets/icons/card-checklist.svg" alt="Ícone de Checklist">
+			<span>Lista de Tarefas</span>
+		</div>
+	</header>
+
+
+	<main>
+		<h1>Lista de Tarefas</h1>
+
+		<section>
+			<h2>Adicionar Tarefa</h2>
+			<article>
+				<form action="#" method="post" id="form-adicionar-tarefa">
+					<input type="text" name="nome-tarefa" id="nome-tarefa" required>
+					<button type="submit">Adicionar</button>
+				</form>
+			</article>
+		</section>
+
+		<hr>
+
+		<section>
+			<h2>Tarefas Pendentes</h2>
+			<article id="container-tarefas">
+				<div id="aviso-lista-vazia">
+					<p>
+						<i>Nada por aqui ainda.</i>
+					</p>
+					<img src="assets/img/ghost-solid-full.svg" alt="Ícone de Fantasma" height="60px">
+					<p>
+						<i>Que tal adicionar uma tarefa?</i>
+					</p>
+				</div>
+
+			</article>
+		</section>
+
+	</main>
+
+
+	<footer>
+		<small>
+			Desenvolvido por Carlos Bordin e Matheus Pfeffer - Aula de Bancos de Dados III (Professor Luis Claudio)
+		</small>
+	</footer>
+
+
+	<!-- templates -->
+	<template id="template-tarefa">
+		<div class="tarefa" id="tarefa-placeholder">
+			<p>Lorem ipsum, dolor sit amet</p>
+			<!-- <button type="button">Excluir</button> -->
+		</div>
+	</template>
+
+
+	<!-- js -->
+	<script src="js/app.js"></script>
+</body>
+
+</html>
