@@ -12,11 +12,13 @@
 }
 
 body {
-	margin: 0;
-	background-color: var(--cor-fundo);
-	color: var(--cor-texto);
-	font-family:
-		Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -51,17 +53,36 @@ hr {
     padding: 16px 32px;
 }
 
-.box {
-	display: flexbox;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-	border: 1px solid;
-	border-radius: 10px;
-	padding: 20px;
-	max-width: fit-content;
-	text-align: center;
-	background-color: var(--cor-card);
+.box{
+    display:flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: fit-content;
+    text-align: center;
+    background-color: var(--cor-card);
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: oblique;
+    justify-self: center;
+}
+
+.logo img{
+    height: 50px;
+    justify-self: center;
+}
+
+main{
+    width: 90%;
+    margin: 30px auto;
+    flex: 1;
 }
 
 .box.lista {
@@ -82,7 +103,6 @@ hr {
     line-break: auto;
     height: auto;
 }
-
 
 .tarefa p {
 	margin: 16px;
@@ -113,6 +133,14 @@ footer {
     text-align: center;
 }
 
+
 #container-tarefas > .tarefa + .tarefa {
     border-top-color: rgba(255, 255, 255, 0);
+}
+
+footer{
+padding: 1rem;
+font-style: italic;
+font-weight: lighter;
+text-align: center;
 }
