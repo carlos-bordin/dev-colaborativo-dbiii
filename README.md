@@ -20,9 +20,11 @@ Foi desenvolvido uma to-do list com HTML, CSS e JavaScript simples.
 
 
 ### Matheus Pfeffer
-- a
-- b
-- c
+- Estilização da página web utilizando CSS.
+- Configuração do *.gitignore*.
+- Aprovação/revisão de *Pull Requests*.
+- Resolução dos conflitos de *Merge*.
+- Demais correções visuais.
 
 
 ***
