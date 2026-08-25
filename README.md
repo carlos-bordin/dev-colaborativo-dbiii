@@ -50,4 +50,4 @@ Separação de papéis, e principalmente a questão de pull requests controlados
 ***
 
 
-## [🔗 Ver Requisitos Completos](docs/requisitos.md)
+## [🔗 Requisitos Tecnológicos](docs/requisitos.md)
